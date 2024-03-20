@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTER CATEGORY</title>
+  <link rel="stylesheet" href="css/add_cat.css">
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-storage-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+</head>
+<body id="page">
+  
+  <nav id="navbar">
+    <a href="index.html" id="logo-link">
+      <h1 id="heading">KIOSK ADMIN</h1>
+    </a>
+    <a href="index.html">HOME</a>
+    <a href="add_item.html">ADD ITEMS</a>
+    <a href="add_cat.html" style="color: rgb(255, 196, 0); font-weight: bold;">ADD CATEGORIES</a>
+    <a href="manage_menu.html">MANAGE MENU</a>
+    <a href="orders.html">VIEW OR APPROVE ORDERS</a>
+  </nav>
+<br>
+  
+
+<div id="work">
+  <br><br>
+  <h1 id="head2">REGISTER CATEGORY</h1>
+      <input type="text" id="cat" placeholder="Category Name eg.(Fast Food)">
+      <br><br>
+      <input type="file" 
+      class="inputFile" 
+      id="fileInp" 
+      onchange="previewImage(event)"
+    accept="image/jpg, image/png, image/jpeg, image/bmp, image/svg"/>
+    <img id="imagePreview" alt="Selected Image" style="display:none; max-width: 100px; margin-top: 3px;">
+<br>
+      <button onclick="uploadcat();">Register Category</button>
+<br>
+</div>
+
+
+<script src="js/add_db.js"></script>
+
+
+
+
+
+<div id="myPopup" class="popup">
+  <div class="popup-content">
+      <img alt="LOADING" src="assets/loading.gif" id="loading">
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "115063990425",
+    "firebase_url": "https://kiosk-app-162-default-rtdb.firebaseio.com",
+    "project_id": "kiosk-app-162",
+    "storage_bucket": "kiosk-app-162.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115063990425:android:df5db00380e90c55827008",
+        "android_client_info": {
+          "package_name": "com.example.kioskapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzc1g6rhb_KLsskSXXym0RVhZAAsF9CEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

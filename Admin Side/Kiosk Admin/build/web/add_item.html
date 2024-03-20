@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTER ITEMS</title>
+  <link rel="stylesheet" href="css/add_item.css">
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-storage-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+</head>
+<body id="page">
+  
+<h1 id="heading">REGISTER ITEMS</h1>
+<br>
+
+  <div id="work" width="800" height="450">
+    <br><br>
+    <h1 id="head2">ENTER INFORMATION</h1>
+        <input type="text" id="id" placeholder="Item ID eg.(B673)">
+        <br><br>
+        <input type="text" id="name" placeholder="Item Name eg.(Hand, Zinger, e.t.c)">
+        <br><br>
+        <input type="text" id="quantity" placeholder="Quantity eg.(2 Pcs, 1 kg, 1.5ltr)">
+        <br><br>
+        <input type="number" id="price" placeholder="Price Rs. eg.(440)">
+        <br><br>
+        <input type="file" 
+        class="inputFile" 
+        id="fileInp" 
+        onchange="previewImage(event)"
+      accept="image/jpg, image/png, image/jpeg, image/bmp, image/svg"/>
+      <img id="imagePreview" alt="Selected Image" 
+      style="display:none; max-width: 100px; margin-top: 3px;"> 
+      <br> 
+        <button onclick="add_item()">Register Item</button>
+        <br>
+      </div>
+  <script src="js/add_db.js"></script>
+
+  <div id="menu">
+
+  <a href="index.html">
+    <div id="home">
+    <h1>HOME</h1>
+  </div><br>
+  </a>
+  
+  <a href="add_cat.html">
+    <div id="add_cat">
+    <h1>ADD CATEGORIES</h1>
+  </div><br>
+  </a>
+
+  <a href="manage_menu.html">
+    <div id="manage_menu">
+    <h1>MANAGE MENU</h1>
+  </div><br>
+  </a>
+
+  <a href="orders.html">
+  <div id="orders">
+    <h1 id="hh">VIEW OR APPROVE ORDERS</h1>
+  </div>
+</a>
+
+</div>
+
+</body>
+</html>
