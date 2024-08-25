@@ -1,5 +1,5 @@
 
-%**KIOSK FOOD ORDERING SYSTEM**
+****KIOSK FOOD ORDERING SYSTEM****
 This is a complete solution for facilitating food ordering. For menu and other settings and control there will be web and mobile apps. Users could order through a kiosk touch screen running an android app.
 
 **For Restaurant Owners**
