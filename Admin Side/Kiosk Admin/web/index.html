@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiosk Admin Home</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-storage-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+ 
+
+
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#" id="logo-link">
+      <h1 id="heading">KIOSK ADMIN</h1>
+    </a>
+    <a href="index.html" style="color: rgb(255, 196, 0); font-weight: bold;">HOME</a>
+
+    
+        <a href="manage_orders.html" hidden id="order">MANAGE ORDERS</a>
+        <a href="manage_menu.html" hidden id="menu">MANAGE MENU</a>
+        <a href="stats.html" hidden id="cat">ANALYTICS</a>
+        <a href="chats.html" hidden id="cat">CHAT SUPPORT</a>
+
+
+
+  </nav>
+
+  <div id="content-container2">
+    <div id="content2">
+      
+          <div id="signin">
+
+            <div id="togle">
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+          <button type="button" id="login-btn" onclick="login()">Login</button><br>
+          </div>
+        </div>
+          
+  <script src="js/index.js"></script>        
+        <div id="welcome-message" style="visibility: hidden;"></div>
+    </div>
+  </div>
+
+
+
+  <div id="content-container">
+    <div id="content">
+      <div id="main-image-container">
+        <img id="main-image" src="assets/image3.jpg" alt="Main Image">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+

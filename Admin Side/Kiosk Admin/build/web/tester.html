@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase Image Upload using HTML and JavaScript</title>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-storage-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+  
+</head>
+
+<body>
+    <input type="file" class="inputFile" id="fileInp" onchange="getFile(event)"
+    accept="image/jpg, image/png, image/jpeg"/><br>
+
+    <button id="upload" onclick="uploadImage()">Upload Image</button>
+
+    <script src="js/tester.js"></script>
+
+
+</body>
+
+</html>

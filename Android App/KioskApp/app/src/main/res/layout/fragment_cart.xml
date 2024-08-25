@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CART ID: "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:padding="15dp"
+        android:textSize="30dp"
+        android:verticalScrollbarPosition="left"
+        android:id="@+id/cart_id"
+        android:textColor="#009688"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL: "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:textSize="30dp"
+        android:id="@+id/total"
+        android:textColor="#009688"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_id">
+
+        <LinearLayout
+            android:id="@+id/orderList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00b6a4"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

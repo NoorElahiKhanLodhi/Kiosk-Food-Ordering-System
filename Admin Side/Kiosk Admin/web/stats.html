@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Analytics</title>
+    <link rel="stylesheet" href="/web//css/stats.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="index.html" id="logo-link">
+          <h1 id="heading">KIOSK ADMIN</h1>
+        </a>
+        <a href="index.html">HOME</a>
+        <a href="manage_orders.html" >MANAGE ORDERS</a>
+        <a href="manage_menu.html" >MANAGE MENU</a>
+        <a href="stats.html" style="color: rgb(255, 196, 0); font-weight: bold;">ANALYTICS</a>
+        
+        <a href="chats.html" >CHAT SUPPORT</a>
+      </nav>
+    <br>  
+
+    <div class="container">
+        <div class="stats">
+            <p id="totalRevenue">Total Revenue: </p>
+            <p id="monthlyRevenue">This Month's Revenue: </p>
+            <p id="comparison">Comparison with Last Month: </p>
+        </div>
+        <canvas id="monthlyRevenueBarChart"></canvas>
+        <canvas id="monthlyRevenuePieChart"></canvas>
+        <canvas id="monthlyRevenueLineChart"></canvas>
+        <canvas id="lostRevenueBarChart"></canvas>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database-compat.js"></script>
+    <script src="/web/js/stats.js"></script>
+</body>
+</html>

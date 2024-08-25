@@ -1,0 +1,115 @@
+#page{
+    background-image: url(../assets/background.png);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: grey;
+    color: whitesmoke;
+    animation: page 1s;
+}
+@keyframes page {
+    from{opacity: 0%;
+    background-color: white;}
+    to{opacity: 100%;
+        background-color: grey;}
+}
+
+#heading{
+    text-align: center;
+    margin: auto;
+    margin-left: 8em;
+    background-color: #007FFF;
+    width: fit-content;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    animation: head 1s;
+    text-shadow: 4px 4px 4px grey;
+}
+@keyframes head {
+    from{opacity: 0%; transform: translateY(-5em);}
+    to{opacity: 100%; transform: translateY(0em);}
+}
+
+#work{
+    float: right;
+    border-radius: 5em;
+    margin-right: 4em;
+    animation: logo 1s;
+    box-shadow: 2em 2em 4em white;
+    height: fit-content;
+    width: 800px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: x-large;
+    background: rgba(10, 151, 207, 0.7);
+}
+#work:hover{
+    box-shadow: 2em 2em 8em #002244;
+}
+@keyframes logo {
+    from{transform: translateX(100em);}
+    to{transform: translateY(0em);}
+}
+
+#home{margin-top: -7em;
+    animation: menu 0.5s;}
+#add_cat{animation: menu 1s;}
+#manage_menu{animation: menu 1.5s;}
+#orders{animation: menu 2s;}
+
+#menu{
+    position: fixed;
+}
+
+#home,#add_cat,#manage_menu,#orders{
+    background-color:#007FFF;
+    width: 20em;
+    padding: 1em 0 1em 0;
+    text-align: center;
+    border-radius: 1em;
+    opacity: 90%;
+    color: #002244;
+    text-shadow: 3px 3px 6px white;
+}
+#home:hover,#add_cat:hover,#manage_menu:hover,#orders:hover{
+    zoom: 1.005;
+    border-style: solid;
+    border-color: #002244;
+    opacity: 100%;
+    box-shadow: 2em 2em 6em #00FFFF;
+}
+@keyframes menu {
+    from{opacity: 0%; transform: translateX(-100em);}
+    to{opacity: 100%; transform: translateY(0em);}
+}
+#imagePreview{margin: auto;
+    text-align: center;
+border-radius: 1em;}
+
+
+a{text-decoration: none;}
+
+input{
+    color: black;
+    width: 50%;
+text-align: center;
+border-radius: 0.3em;
+box-shadow: 3px 3px 5px black;
+-webkit-text-stroke-width: 0px;
+}
+
+button{border-radius: 0.3em;
+color: black;
+box-shadow: 3px 3px 5px black;
+-webkit-text-stroke-width: 0px;
+margin-bottom: 1em;}
+button:hover{
+    zoom: 1.1;
+    cursor: cell;
+}
+

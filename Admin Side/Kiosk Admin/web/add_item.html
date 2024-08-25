@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTER ITEMS</title>
+  <link rel="stylesheet" href="css/add_item.css">
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-storage-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+</head>
+<body id="page">
+
+  
+
+  
+  <div id="work" width="800" height="450">
+    <a href="manage_menu.html" id="cancel" title="Cancel">
+      <button style="float: right;  margin-top: 0; cursor: pointer;">❌</button>
+  </a>
+    <br><br>
+    <h1 id="head2">REGISTER ITEM</h1>
+       <input type="text" id="category">
+        <br>
+        <input type="text" id="id" placeholder="Item ID eg.(B673)">
+        <br>
+        <input type="text" id="name" placeholder="Item Name eg.(Hand, Zinger, e.t.c)">
+        <br>
+        <input type="text" id="unit" placeholder="Unit eg.(Pcs, kg, ltr, etc)">
+        <br>
+        <input type="number" id="price" placeholder="Unit price Rs. eg.(440)">
+        <br>
+        <label for="discount">Discount:</label>
+        <input type="checkbox" id="discount" onchange="adddiscount()">
+        <input type="text" id="dis_price" placeholder="Discount Price  Rs. eg.(220)" style="visibility: hidden;">
+        <br>
+        <label for="modifierSlider">Number of Modifiers:</label>
+        <input type="range" id="modifierSlider" min="0" max="10" value="0">
+        <p id="mod_no"></p>
+        <div id="modifierTableContainer"></div>
+        <input type="file" 
+        class="inputFile" 
+        id="fileInp" 
+        onchange="previewImage(event)"
+      accept="image/jpg, image/png, image/jpeg, image/bmp, image/svg"/>
+      <img id="imagePreview" alt="Selected Image" 
+      style="display:none; max-width: 100px; margin-top: 3px;">
+      <br>
+<textarea id="description" placeholder="Item Description......"></textarea>
+      <br>
+      <label for="active">Active:</label>
+      <input type="checkbox" id="active">
+      <br> 
+        <button onclick="uploaditem()">Register Item</button>
+        <br>
+      </div>
+  <script src="js/add_item.js"></script>
+
+  
+
+  <div id="myPopup" class="popup">
+    <div class="popup-content">
+        <img alt="LOADING" src="assets/loading.gif" id="loading">
+      </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+#page{
+    background-image: url(../assets/background.png);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: grey;
+    color: whitesmoke;
+    animation: page 1s;
+}
+@keyframes page {
+    from{opacity: 0%;
+    background-color: white;}
+    to{opacity: 100%;
+        background-color: grey;}
+}
+
+#heading{
+    margin: auto;
+    margin-left: 11em;
+    background-color: #007FFF;
+    width: fit-content;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    animation: head 1s;
+    text-shadow: 4px 4px 4px grey;
+}
+@keyframes head {
+    from{opacity: 0%; transform: translateY(-5em);}
+    to{opacity: 100%; transform: translateY(0em);}
+}
+
+#work{
+    opacity: 90%;
+    float: right;
+    border-radius: 5em;
+    margin-right: 8em;
+    animation: logo 1s;
+    box-shadow: 2em 2em 4em white;
+    width: 800px;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: x-large;
+    background: rgba(10, 151, 207, 0.7);
+}
+#work:hover{
+    opacity: 100%;
+    box-shadow: 2em 2em 8em #002244;
+}
+@keyframes logo {
+    from{transform: translateX(100em);}
+    to{transform: translateY(0em);}
+}
+
+#work2{
+    opacity: 90%;
+    float: right;
+    border-radius: 5em;
+    margin-top: 2em;
+    margin-right: 8em;
+    animation: logo 1s;
+    box-shadow: 2em 2em 4em white;
+    width: 800px;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: x-large;
+    background: rgba(10, 151, 207, 0.7);
+}
+#work:hover{
+    opacity: 100%;
+    box-shadow: 2em 2em 8em #002244;
+}
+@keyframes logo {
+    from{transform: translateX(100em);}
+    to{transform: translateY(0em);}
+}
+
+
+#add_item{margin-top: -7em;
+    animation: menu 0.5s;}
+#add_cat{animation: menu 1s;}
+#home{animation: menu 1.5s;}
+#orders{animation: menu 2s;}
+#menu{
+    position: fixed;
+}
+#add_item,#add_cat,#home,#orders{
+    background-color:#007FFF;
+    width: 20em;
+    padding: 1em 0 1em 0;
+    text-align: center;
+    border-radius: 1em;
+    opacity: 90%;
+    color: #002244;
+    text-shadow: 3px 3px 6px white;
+}
+#add_item:hover,#add_cat:hover,#home:hover,#orders:hover{
+    zoom: 1.005;
+    border-style: solid;
+    border-color: #002244;
+    opacity: 100%;
+    box-shadow: 2em 2em 6em goldenrod;
+}
+@keyframes menu {
+    from{opacity: 0%; transform: translateX(-100em);}
+    to{opacity: 100%; transform: translateY(0em);}
+}
+
+#qrcode{margin-left: 40%;
+    margin-bottom: 1em;
+    text-align: center;}
+    
+
+a{text-decoration: none;}
+
+#productTable,#catTable{
+    margin: auto;
+    color: black;
+text-align: center;
+font-size: medium;
+background-image: url("../assets/tablebg.png");
+margin-bottom: 1em;
+}
+td,th{outline: auto #002244;}
+
+button{border-radius: 0.3em;
+color: black;
+box-shadow: 3px 3px 5px black;
+-webkit-text-stroke-width: 0px;
+}
+button:hover{
+    zoom: 1.1;
+    cursor:alias;
+}

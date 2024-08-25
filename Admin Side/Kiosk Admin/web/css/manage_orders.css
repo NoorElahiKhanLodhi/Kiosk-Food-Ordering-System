@@ -1,0 +1,154 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: bg 30s infinite;
+}
+
+@keyframes bg {
+    0% {
+    background-image: url(/web/assets/bga1.jpg);
+    }
+    20% {
+        background-image: url(/web/assets/bga2.jpg);
+        }
+        40% {
+            background-image: url(/web/assets/bga3.jpg);
+            }
+            60% {
+                background-image: url(/web/assets/bga4.jpg);
+                }
+                80% {
+                    background-image: url(/web/assets/bga5.jpg);
+                    }
+                    100% {
+                        background-image: url(/web/assets/bga1.jpg);
+                        }
+}
+
+
+
+
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 5em auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #00ffe5;
+}
+
+.order h2 {
+    margin-top: 0;
+}
+
+.order-details {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reject-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV BAR */
+#navbar {
+    margin-top: 1em;
+    background-color: #009688;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    animation: head 1s;
+  }
+  
+  #navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: auto;
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #navbar a:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  #heading {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 3em;
+    animation: head 1s;
+    text-shadow: 4px 4px 4px grey;
+  }
+  
+  #logo-link {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  
+  
+  @keyframes head {
+    from {
+        opacity: 0%;
+        transform: translateY(-5em);
+    }
+  
+    to {
+        opacity: 100%;
+        transform: translateY(0em);
+    }
+  }
+  

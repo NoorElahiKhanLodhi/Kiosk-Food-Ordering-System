@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/web/css/manage_menu.css">
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" background="/web/assets/bg6.gif">
+
+    <nav id="navbar">
+        <a href="index.html" id="logo-link">
+          <h1 id="heading">KIOSK ADMIN</h1>
+        </a>
+        <a href="index.html">HOME</a>
+        <a href="manage_orders.html">MANAGE ORDERS</a>
+        <a href="manage_menu.html" style="color: rgb(255, 196, 0); font-weight: bold;">MANAGE MENU</a>
+        <a href="stats.html">ANALYTICS</a>
+        <a href="chats.html" >CHAT SUPPORT</a>
+      </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="work">
+        <br><br>
+        <h2 id="head2">ADD CATEGORY</h2>
+            <input type="text" id="cat" placeholder="Category Name eg.(Fast Food)">
+            <input type="file" 
+            class="inputFile" 
+            id="fileInp" 
+            onchange="previewImage(event)"
+          accept="image/jpg, image/png, image/jpeg, image/bmp, image/svg"/>
+          <img id="imagePreview" alt="Selected Image" style="display:none; max-width: 100px; margin-top: 3px;">
+      <br>
+            <button onclick="uploadcat();">Add Category</button>
+      <br>
+      </div>
+      
+          
+      
+      
+      <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <img alt="LOADING" src="assets/loading.gif" id="loading">
+          </div>
+      </div>
+      
+
+    <div class="both" ng-repeat="category in categories">
+        <h1 class="category-header">
+            <button class="toggle-button" ng-click="toggle(category)">
+                <img ng-src="{{category.imageUrl}}" alt="{{category.name}} image" class="category-image">
+                {{category.name}} {{ category.buttonSymbol }}
+                <button class="delete-category-button" title="Delete {{category.name}}" ng-click="deleteCategory(category.name)">🗑</button>
+            </button>
+
+        </h1>
+        <div class="dive" ng-hide="category.hidden">
+            <br><br>
+            <table>
+                <tr id="table-head">
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Unit</th>
+                    <th>Action</th>
+                </tr>
+                <tr ng-repeat="item in category.items">
+                    <td><img ng-src="{{item.image}}" alt="{{item.name}} image" class="item-image"></td>
+                    <td id="item-name">{{item.name}}</td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.discount}}</td>
+                    <td>{{item.unit}}</td>
+                    <td>
+                        <button class="edit-item-button" title="Edit {{item.name}}" ng-click="editItem(category.name, item)">✏️</button>
+                        <button class="delete-item-button" title="Delete {{item.name}}" ng-click="deleteItem(category.name, item.id)">❌</button>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+<!--ADD ITEM-->
+<button id="{{category.name}}" onclick="doit(this)" title="Add more items to {{category.name}} Category">+</button>
+<!--ADD ITEM-->
+        </div>
+    </div>
+
+    <script defer src="/web/js/tester.js"></script>
+</body>
+</html>

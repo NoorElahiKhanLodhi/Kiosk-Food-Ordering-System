@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANAGE DATABASE</title>
+  <link rel="stylesheet" href="css/manage_menu.css">
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body id="page">
+  
+<h1 id="heading">MANAGE MENU</h1>
+<br>
+  <div id="work">  
+    <h2 id="head2">ITEM INFORMATION</h1>
+    <table id="productTable">
+      <thead>
+          <tr>
+            <th>Item ID</th>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Data will be populated here -->
+      </tbody>
+  </table>
+  <br>
+        <div id="qrcode">
+        </div>
+  </div>
+
+
+  <div id="work2">  
+    <h2 id="head2">Category INFORMATION</h1>
+    <table id="catTable">
+      <thead>
+          <tr>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Data will be populated here -->
+      </tbody>
+  </table>
+  </div>
+
+  <script src="js/manage_menu.js"></script>
+
+
+<div id="menu">
+
+  <a href="add_item.html">
+    <div id="add_item">
+    <h1>ADD ITEMS</h1>
+  </div><br>
+  </a>
+  
+  <a href="add_cat.html">
+    <div id="add_cat">
+    <h1>ADD CATEGORY</h1>
+  </div><br>
+  </a>
+
+  <a href="index.html">
+    <div id="home">
+    <h1>HOME</h1>
+  </div><br>
+  </a>
+
+  <a href="orders.html">
+    <div id="orders">
+      <h1 id="hh">VIEW OR APPROVE ORDERS</h1>
+    </div>
+  </a>
+</div>
+
+</body>
+</html>
