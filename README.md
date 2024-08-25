@@ -11,4 +11,6 @@ Customers could use the kiosk with screen to place hastle free orders plus make 
 
 **Technologies Used**
 Platforms: Android,Web
+
+
 Languages: Java, Javascript, HTML, CSS, XML
